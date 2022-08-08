@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Wisata Hambalang | Log in</title>
+  <title>Wisata Hambalang | Login</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon-title.png'?>">    
+  <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon-title.png'?>">  
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
   <!-- Font Awesome -->
@@ -18,35 +18,35 @@
 
 
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-image: linear-gradient(315deg, #000000 0%, #414141 74%);">
 <div class="login-box">
   <div>
    <p><?php echo $this->session->flashdata('msg');?></p>
   </div>
   <!-- /.login-logo -->
-  <div class="login-box-body">
+  <div class="login-box-body" style="border-radius:20px;">
     <p class="login-box-msg"> <img width="120px;" src="<?php echo base_url().'theme/images/logo-hambalang-dark.png'?>"></p><hr/>
 
     <form action="<?php echo site_url().'admin/login/auth'?>" method="post">
       <div class="form-group has-feedback">
-        <input type="text" name="username" class="form-control" placeholder="Username" required>
+        <input type="text" name="username" class="form-control" placeholder="Username" style="border-radius:5px;" required>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" name="password" class="form-control" placeholder="Password" required>
+        <input type="password" name="password" class="form-control" placeholder="Password" style="border-radius:5px;" required>
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
         <div class="col-xs-8">
-          <div class="checkbox icheck">
+          <div class="checkbox icheck col-md-7">
             <label>
-              <input type="checkbox"> Remember Me
+              <input class="col-md-2" type="checkbox">Remember Me
             </label>
           </div>
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          <button type="submit" class="btn btn-primary btn-block btn-flat" style="border-radius:5px;">Sign In</button>
         </div>
         <!-- /.col -->
       </div>
@@ -55,7 +55,8 @@
 
     <!-- /.social-auth-links -->
     <hr/>
-    <p><center>Copyright <?php echo date('Y');?> © HIMASI UNAS<br/></center></p>
+    <strong><p><center>Copyright <?php echo date('Y');?> © HIMASI UNAS<br/></center></p></strong>
+    
   </div>
   <!-- /.login-box-body -->
 </div>

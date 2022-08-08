@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Blog</title>
-    <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
+    <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon-title.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
     <!-- Google Fonts -->
@@ -79,10 +79,10 @@
                                 <a class="nav-link" href="<?php echo site_url('about');?>">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('guru');?>">Desa</a>
+                                    <a class="nav-link" href="<?php echo site_url('desa');?>">Desa</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('siswa');?>">Penginapan</a>
+                                    <a class="nav-link" href="<?php echo site_url('penginapan');?>">Penginapan</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('blog');?>">Blog</a>
@@ -166,14 +166,13 @@
                       <hr>
                     <?php endforeach;?>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
 <!--//END BLOG -->
   <!--============================= FOOTER =============================-->
-  <footer>
+<footer>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -181,43 +180,47 @@
                     <a href="<?php echo site_url();?>">
                         <img src="<?php echo base_url().'theme/images/logo-hambalang-putih.png'?>" class="img-fluid" width="220px;" alt="footer_logo" />
                     </a>
+                    <a href="https://himasi.ftki.unas.ac.id/" target="_blank">
                     <p><?php echo date('Y');?> © HIMASI UNAS </a>
+                    </a>
                     </div>
                 </div>
-                <div class="col-md-3 h6">
+                <div class="col-md-3">
                     <div class="sitemap">
                         <h3>Menu Utama</h3>
                         <ul>
-                            <li><a href="<?php echo site_url();?>">Home</a></li>
-                            <li><a href="<?php echo site_url('about');?>">About</a></li>
-                            <li><a href="<?php echo site_url('artikel');?>">Blog </a></li>
-                            <li><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
-                            <li><a href="<?php echo site_url('contact');?>">Contact</a></li>
+                            <li class="h6"><a href="<?php echo site_url();?>">Home</a></li>
+                            <li class="h6"><a href="<?php echo site_url('about');?>">About</a></li>
+                            <li class="h6"><a href="<?php echo site_url('artikel');?>">Blog </a></li>
+                            <li class="h6"><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
+                            <li class="h6"><a href="<?php echo site_url('contact');?>">Contact</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3 h6">
+                <div class="col-md-3">
                   <div class="sitemap">
                       <h3>Lainnya</h3>
                       <ul>
-                          <li><a href="<?php echo site_url('guru');?>">Desa</a></li>
-                          <li><a href="<?php echo site_url('siswa');?>">Penginapan </a></li>
-                          <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
-                          <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
-                          <li><a href="<?php echo site_url('download');?>">Download</a></li>
+                          <li class="h6"><a href="<?php echo site_url('desa');?>">Desa</a></li>
+                          <li class="h6"><a href="<?php echo site_url('penginapan');?>">Penginapan </a></li>
+                          <li class="h6"><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
+                          <li class="h6"><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
+                          <li class="h6"><a href="<?php echo site_url('download');?>">Download</a></li>
                       </ul>
                   </div>
                 </div>
-                <div class="col-md-3 h6">
+                <div class="col-md-3">
                     <div class="address">
                         <h3>Hubungi Kami</h3>
-                        <p><span>Alamat: </span> <br> Hambalang, Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16810 </p>
-                        <p><span>Email: </span> infohambalang@.gmail.com
+                        <p class="h6"><span >Alamat: </span><br>Hambalang, Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16810 
+                    </p>
+                        <p class="h6"><span>Email: </span> infohambalang@gmail.com
                             <br> Phone : 08123456789 </p>
+                            <br>
                             <ul class="footer-social-icons">
-                                        <li><a href="https://m.facebook.com/mtstarbiyatulfalah.bantargebang"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://www.instagram.com/mtstarbiyatulfalah94/?igshid=1xyoqvuqccosg"><i class="fa fa-instagram fa-in" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://www.youtube.com/channel/UCcEDH5YygxNcE3CXB0covgg"><i class="fa fa-youtube fa-tw" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://m.facebook.com/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram fa-in" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.youtube.com"><i class="fa fa-youtube fa-tw" aria-hidden="true"></i></a></li>
                                     </ul>
                         </div>
                     </div>

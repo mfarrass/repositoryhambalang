@@ -442,7 +442,7 @@ a {
   .our_courses .courses_box {
     position: relative;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 20px 40px 60px;
     /* -webkit-box-shadow: 0px 10px 90px -6px #c7c5c7;
     -moz-box-shadow: 0px 10px 90px -6px #c7c5c7;
     box-shadow: 0px 10px 90px -6px #c7c5c7;
@@ -962,10 +962,11 @@ a {
    GALLERY
    ============================================================== */
 .gallery-wrap {
-  padding: 98px 0; }
+  padding: 98px 0;}
   .gallery-wrap img {
     margin: 0;
-    width: 100%; }
+    width: 100%; 
+  }
 
 .gallery-wrap {
   margin: 0; }
@@ -1186,7 +1187,20 @@ footer h3 {
 .footer-social-icons li {
   margin-right: 5px; }
 
-.fa-fb {
+/* .fa-fb {
+  background: #4b6eb9;
+  padding: 14px 18px;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px; }
+
+.fa-fb:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.2;
+  -o-transition: 0.2;
+  transition: 0.2; } */
+
+  .fa-fb {
   background: #4b6eb9;
   padding: 14px 18px;
   border-radius: 50%;
@@ -1198,6 +1212,7 @@ footer h3 {
   -webkit-transition: 0.2;
   -o-transition: 0.2;
   transition: 0.2; }
+
 
 .fa-in {
   background: #188bc3;
@@ -2944,7 +2959,7 @@ div.panel {
    CONTACT US
    ============================================================== */
 .contact {
-  padding: 98px 0 0; }
+  padding: 98px 0 0;}
 
 .contact-title h2 {
   font-weight: 700;
@@ -3053,9 +3068,9 @@ div.panel {
   border-radius: 50%; }
 
 .about-style2 .about-img {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto; }
+  width: 300px;
+  height: 350px;
+  margin: -45px auto; }
 
 .event-img2 h3 {
   font-weight: 600;

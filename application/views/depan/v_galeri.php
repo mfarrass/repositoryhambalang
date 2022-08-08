@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Gallery Photo</title>
-  <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
+  <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon-title.png'?>">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
   <!-- Google Fonts -->
@@ -78,10 +78,10 @@
                                 <a class="nav-link" href="<?php echo site_url('about');?>">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('guru');?>">Desa</a>
+                                    <a class="nav-link" href="<?php echo site_url('desa');?>">Desa</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('siswa');?>">Penginapan</a>
+                                    <a class="nav-link" href="<?php echo site_url('penginapan');?>">Penginapan</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('blog');?>">Blog</a>
@@ -127,7 +127,7 @@
         <div id="gallery-content-center">
           <?php foreach ($all_galeri->result() as $row) : ?>
             <a href="<?php echo base_url().'assets/images/'.$row->galeri_gambar;?>" class="image-link2">
-             <img src="<?php echo base_url().'assets/images/'.$row->galeri_gambar;?>" class="all img-fluid" alt="#" />
+             <img src="<?php echo base_url().'assets/images/'.$row->galeri_gambar;?>" class="all img-fluid" alt="#" style="height: 200px; position: relative; margin: 3px;"/>
             </a>
           <?php endforeach;?>
        </div>
@@ -149,7 +149,9 @@
                     <a href="<?php echo site_url();?>">
                         <img src="<?php echo base_url().'theme/images/logo-hambalang-putih.png'?>" class="img-fluid" width="220px;" alt="footer_logo" />
                     </a>
+                    <a href="https://himasi.ftki.unas.ac.id/" target="_blank">
                     <p><?php echo date('Y');?> © HIMASI UNAS </a>
+                    </a>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -168,8 +170,8 @@
                   <div class="sitemap">
                       <h3>Lainnya</h3>
                       <ul>
-                          <li><a href="<?php echo site_url('guru');?>">Desa</a></li>
-                          <li><a href="<?php echo site_url('siswa');?>">Penginapan </a></li>
+                          <li><a href="<?php echo site_url('desa');?>">Desa</a></li>
+                          <li><a href="<?php echo site_url('penginapan');?>">Penginapan </a></li>
                           <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
                           <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
                           <li><a href="<?php echo site_url('download');?>">Download</a></li>
@@ -179,13 +181,14 @@
                 <div class="col-md-3">
                     <div class="address">
                         <h3>Hubungi Kami</h3>
-                        <p><span>Alamat: </span> Hambalang, Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16810 </p>
-                        <p><span>Email: </span> infohambalang@.gmail.com
+                        <p><span>Alamat: </span><br>Hambalang, Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16810 
+                    </p>
+                        <p><span>Email: </span> infohambalang@gmail.com
                             <br> Phone : 08123456789 </p>
                             <ul class="footer-social-icons">
-                                        <li><a href="https://m.facebook.com/mtstarbiyatulfalah.bantargebang"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://www.instagram.com/mtstarbiyatulfalah94/?igshid=1xyoqvuqccosg"><i class="fa fa-instagram fa-in" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://www.youtube.com/channel/UCcEDH5YygxNcE3CXB0covgg"><i class="fa fa-youtube fa-tw" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://m.facebook.com/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram fa-in" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.youtube.com"><i class="fa fa-youtube fa-tw" aria-hidden="true"></i></a></li>
                                     </ul>
                         </div>
                     </div>

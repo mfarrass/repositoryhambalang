@@ -80,10 +80,10 @@
                                 <a class="nav-link" href="<?php echo site_url('about');?>">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('guru');?>">Desa</a>
+                                    <a class="nav-link" href="<?php echo site_url('desa');?>">Desa</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('siswa');?>">Penginapan</a>
+                                    <a class="nav-link" href="<?php echo site_url('penginapan');?>">Penginapan</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('blog');?>">Blog</a>
@@ -178,11 +178,11 @@
         <div class="row">
             <div class="col-md-8">
                <h2>Wisata Hambalang</h2>
-               <p>Desa Hambalang adalah destinasi wisata baru yang hadir di Bogor. Belakangan pamornya naik karena banyak dipopulerkan sebagai tempat berfoto. Terlebih dengan suasana sejuk yang meyelimuti, membuat para wisatawan semakin betah saat menikmati momen liburan ke Desa Hambalang. </p>
+               <p>Selamat datang di website Wisata Hambalang, website ini ditujukan untuk memudahkan para wisatawan yang ingin berkunjung ke Desa Hambalang untuk mencari referensi tempat wisata yang berada di Hambalang. Hambalang adalah destinasi wisata baru yang hadir di Bogor. Belakangan pamornya naik karena banyak dipopulerkan sebagai tempat berfoto. Terlebih dengan suasana sejuk yang meyelimuti, membuat para wisatawan semakin betah saat menikmati momen liburan ke Desa Hambalang. </p>
 
             </div>
             <div class="col-md-4">
-                <img src="<?php echo base_url().'theme/images/welcome3.png'?>" class="about-img" alt="#">
+                <img src="<?php echo base_url().'theme/images/welcome-to-hambalang.png'?>" class="about-img" alt="#">
             </div>
         </div>
     </div>
@@ -271,7 +271,7 @@
                     <img src="<?php echo base_url().'theme/images/chart-icon_1.png'?>" class="img-fluid" alt="chart_icon">
                 </div>
                 <div class="chart-text">
-                    <p><span class="counter"><?php echo $tot_guru;?></span> Struktur
+                    <p><span class="counter"><?php echo $tot_desa;?></span> Struktur
                     </p>
                 </div>
             </div>
@@ -280,7 +280,7 @@
                     <img src="<?php echo base_url().'theme/images/chart-icon_2.png'?>" class="img-fluid" alt="chart_icon">
                 </div>
                 <div class="chart-text">
-                    <p><span class="counter"><?php echo $tot_siswa;?></span> Penginapan
+                    <p><span class="counter"><?php echo $tot_penginapan;?></span> Penginapan
                     </p>
                 </div>
             </div>
@@ -314,7 +314,9 @@
                     <a href="<?php echo site_url();?>">
                         <img src="<?php echo base_url().'theme/images/logo-hambalang-putih.png'?>" class="img-fluid" width="220px;" alt="footer_logo" />
                     </a>
+                    <a href="https://himasi.ftki.unas.ac.id/" target="_blank">
                     <p><?php echo date('Y');?> © HIMASI UNAS </a>
+                    </a>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -333,8 +335,8 @@
                   <div class="sitemap">
                       <h3>Lainnya</h3>
                       <ul>
-                          <li><a href="<?php echo site_url('guru');?>">Desa</a></li>
-                          <li><a href="<?php echo site_url('siswa');?>">Penginapan </a></li>
+                          <li><a href="<?php echo site_url('desa');?>">Desa</a></li>
+                          <li><a href="<?php echo site_url('penginapan');?>">Penginapan </a></li>
                           <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
                           <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
                           <li><a href="<?php echo site_url('download');?>">Download</a></li>
@@ -346,12 +348,12 @@
                         <h3>Hubungi Kami</h3>
                         <p><span>Alamat: </span><br>Hambalang, Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16810 
                     </p>
-                        <p><span>Email: </span> infohambalang@.gmail.com
+                        <p><span>Email: </span> infohambalang@gmail.com
                             <br> Phone : 08123456789 </p>
                             <ul class="footer-social-icons">
-                                        <li><a href="https://m.facebook.com/mtstarbiyatulfalah.bantargebang"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://www.instagram.com/mtstarbiyatulfalah94/?igshid=1xyoqvuqccosg"><i class="fa fa-instagram fa-in" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://www.youtube.com/channel/UCcEDH5YygxNcE3CXB0covgg"><i class="fa fa-youtube fa-tw" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://m.facebook.com/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram fa-in" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.youtube.com"><i class="fa fa-youtube fa-tw" aria-hidden="true"></i></a></li>
                                     </ul>
                         </div>
                     </div>
